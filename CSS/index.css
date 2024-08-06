@@ -1,0 +1,135 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+    margin-top: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+.team-info, .players, .coach {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.player-card, .coach-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.player-card img, .coach-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 150px;
+    object-fit: contain; /* Change to contain */
+    margin-bottom: 10px;
+}
+
+.player-card h3, .coach-card h3 {
+    margin: 10px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+    
+    header .logo {
+        width: 100px;
+        margin-top: 10px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+
+    .team-info, .players, .coach {
+        padding: 15px;
+    }
+
+    .player-card, .coach-card {
+        padding: 10px;
+    }
+
+    .player-card img, .coach-card img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header .logo {
+        width: 80px;
+        margin-top: 5px;
+    }
+    
+    .team-info, .players, .coach {
+        padding: 10px;
+    }
+
+    .player-card, .coach-card {
+        padding: 5px;
+    }
+
+    .player-card img, .coach-card img {
+        height: 100px;
+    }
+}
